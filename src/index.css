@@ -11,3 +11,138 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+button,
+a,
+div,
+img,
+input,
+p, 
+h1,
+li ,
+ul 
+ {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 50px auto;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+}
+.container-img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+.container-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.container-from {
+  width: 100%;
+  max-width: 350px;
+  padding: 5px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-from input {
+  width: 100%;
+  padding-left: 5px;
+  margin: 10px auto;
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.container-from input :focus {
+  border-bottom: 1px solid cornflowerblue;
+}
+
+.container-btns {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  padding: 5px;
+  margin: 10px auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  list-style: none;
+
+}
+.container-btns li {
+  width: 40%;
+  margin: 10px auto;
+  min-width:  100px;
+  padding: 5px;
+  height: auto;
+  min-height: 40px;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-weight: 600;
+    transition: all .2s ease; 
+    background-color: rgb(226, 220, 214);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+}
+.container-btns li a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.container-btns li:active{
+  transform: scale(.9);
+}
+.container-btns li:last-child{
+  background-color: darkcyan;
+  color: white;
+}
+
+
+.container-biografia{
+  width: 100%;
+  height: auto;
+  max-width: 900px;
+  padding: 10px  20px;
+  margin: 10px  auto;
+}
+.container-biografia__titulo{
+ width: 100%;
+ text-align: center;
+ text-transform: capitalize;
+ font-size: 35px;
+ font-weight: 400;
+}
+.container-biografia p {
+  font-size: 16px ;
+  font-weight: 400;
+  line-height: 25px;
+}
+.container-biografia p::first-letter{
+  text-transform: uppercase;
+}
